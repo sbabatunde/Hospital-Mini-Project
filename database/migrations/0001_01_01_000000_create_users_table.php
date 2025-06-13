@@ -16,6 +16,18 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            // Role: client, doctor, admin
+            $table->enum('role', ['client', 'doctor', 'admin'])->default('client');
+
+            // Doctor-specific (optional)
+            $table->string('specialization')->nullable();
+            $table->text('bio')->nullable();
+            $table->string('license_number')->nullable();
+
+            // Client-specific (optional)
+            $table->date('date_of_birth')->nullable();
+            $table->string('gender')->nullable();
+
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
