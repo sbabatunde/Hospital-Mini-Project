@@ -28,8 +28,18 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        // Redirect based on user role
+        $role = auth()->user()->role;
+        $name = auth()->user()->name;
+
+        return match ($role) {
+            'admin' => redirect()->route('admin.dashboard')->with('success', 'Login successful! Welcome' . $name),
+            'doctor' => redirect()->route('doctor.dashboard')->with('success', 'Login successful! Welcome. <br> Dr. ' . $name),
+            'client' => redirect()->route('client.dashboard')->with('success', 'Login successful! Welcome' . $name),
+            default => redirect('/'),
+        };
     }
+
 
     /**
      * Destroy an authenticated session.
