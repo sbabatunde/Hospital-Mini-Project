@@ -94,7 +94,7 @@
             </div>
             <!-- Pagination Links -->
             <div class="mt-6">
-                {{ $reports->links() }}
+                {{ $appointments->links() }}
             </div>
         @endif
     </div>
