@@ -2,8 +2,8 @@
 
 @section('content')
     <!-- =======================
-                                                                 HERO SECTION WITH VIDEO BACKGROUND
-                                                            ======================== -->
+                                                                     HERO SECTION WITH VIDEO BACKGROUND
+                                                                ======================== -->
     <section class="relative min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24 overflow-hidden">
         <!-- Video Background -->
         <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-40 z-0">
@@ -43,8 +43,8 @@
     </section>
 
     <!-- =======================
-                                                                 TELEHEALTH HIGHLIGHT SECTION
-                                                            ======================== -->
+                                                                     TELEHEALTH HIGHLIGHT SECTION
+                                                                ======================== -->
     <section id="telehealth" class="bg-orange-50 py-20 px-6 md:px-12 lg:px-24">
         <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
             <h2 class="text-4xl font-bold text-gray-800 mb-6">Virtual Care at Your Fingertips</h2>
@@ -60,11 +60,11 @@
     </section>
 
     <!-- =======================
-                                                                 FEATURES SECTION
-                                                            ======================== -->
+                                                                     FEATURES SECTION
+                                                                ======================== -->
     <section id="features" class="bg-gray-100 py-20 px-6 md:px-12 lg:px-24">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-12" data-aos="fade-up">Why Choose MediConnect?</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-12" data-aos="fade-up">Why Choose MediProfessionals?</h2>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="bg-white p-10 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="zoom-in">
                     <img src="{{ asset('doctors/10.jpg') }}" class="w-20 h-20 mx-auto mb-6" alt="Top-Rated Doctors Icon">
@@ -92,8 +92,8 @@
     </section>
 
     <!-- =======================
-                                                                 CHAT WITH DOCTOR SECTION (WITH VIDEO)
-                                                            ======================== -->
+                                                                     CHAT WITH DOCTOR SECTION (WITH VIDEO)
+                                                                ======================== -->
     <section id="chat-doctor" class="relative py-20 px-6 md:px-12 lg:px-24 bg-white overflow-hidden">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <!-- Video Demo -->
@@ -154,13 +154,14 @@
 
 
     <!-- =======================
-                                                                 TESTIMONIALS SECTION
-                                                            ======================== -->
+                                                                     TESTIMONIALS SECTION
+                                                                ======================== -->
     <section class="bg-gray-50 py-20 px-6 md:px-12 lg:px-24">
         <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">What Our Users Say</h2>
             <p class="text-gray-600 max-w-3xl mx-auto mb-16">
-                Our users love the simplicity and accessibility MediConnect provides. Whether you're a doctor or a patient —
+                Our users love the simplicity and accessibility MediProfessionals provides. Whether you're a doctor or a
+                patient —
                 healthcare is now just a click away.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-10">
@@ -170,7 +171,8 @@
                     <footer class="text-sm font-semibold text-orange-500">— Janet O., Client</footer>
                 </blockquote>
                 <blockquote class="bg-white p-8 rounded-lg shadow-md text-left w-full md:w-1/2" data-aos="flip-right">
-                    <p class="text-gray-700 mb-4 italic">"As a doctor, MediConnect helps me manage patient appointments
+                    <p class="text-gray-700 mb-4 italic">"As a doctor, MediProfessionals helps me manage patient
+                        appointments
                         without admin overhead."</p>
                     <footer class="text-sm font-semibold text-orange-500">— Dr. Yusuf A., Cardiologist</footer>
                 </blockquote>

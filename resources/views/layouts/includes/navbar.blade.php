@@ -10,8 +10,10 @@
 
                 @auth
                     @if (auth()->user()->role == 'admin')
-                        <a href="" class="text-gray-600 hover:text-orange-500 px-4">Clients</a>
-                        <a href="" class="text-gray-600 hover:text-orange-500 px-4">AdminDashboard</a>
+                        <a href="{{ route('admin.clients.index') }}"
+                            class="text-gray-600 hover:text-orange-500 px-4">Clients</a>
+                        <a href="{{ route('admin.dashboard') }}"
+                            class="text-gray-600 hover:text-orange-500 px-4">Dashboard</a>
                     @elseif(auth()->user()->role == 'doctor')
                         <a href="{{ route('doctor.dashboard') }}" class="text-gray-600 hover:text-orange-500 px-4">
                             Dashboard
