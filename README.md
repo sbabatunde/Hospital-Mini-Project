@@ -34,8 +34,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mediconnect.git
-cd mediconnect
+git clone https://github.com/yourusername/miniHospital.git
+cd miniHospital
 
 # Install PHP dependencies
 composer install
